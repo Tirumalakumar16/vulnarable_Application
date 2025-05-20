@@ -17,7 +17,7 @@
 
 <body class="bg-gray-100">
     <header class="bg-cyan-500 text-white">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between flex-wrap">
+    <nav class="max-w-7xl mx-auto px-4  py-4 flex items-center justify-between flex-wrap">
         <a href="index.php" class="text-2xl pl-0 font-bold text-black ml-0">Practical Infosec E-Commerce</a>
 
         <!-- Mobile menu button -->
@@ -92,7 +92,7 @@
 
     <footer class="bg-black text-white dark:bg-black">
       <div
-        class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-25"
+        class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3  gap-25 sm:gap-9 "
       >
         <!-- Brand -->
         <div>

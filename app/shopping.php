@@ -16,7 +16,7 @@ include 'db.php';
 </head>
 <body>
    <header class="bg-cyan-500 text-white">
-    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between flex-wrap">
+    <nav class="max-w-7xl mx-auto px-4   py-4 flex items-center justify-between flex-wrap">
         <a href="index.php" class="text-2xl pl-0 font-bold text-black ml-0">Practical Infosec E-Commerce</a>
 
         <!-- Mobile menu button -->
@@ -101,7 +101,7 @@ include 'db.php';
   </form>
 </div>
         <!-- Product Cards -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php
             // PHP logic unchanged for product display, SQL injection, and XSS demonstration
             if (isset($_GET['product_id'])) {
