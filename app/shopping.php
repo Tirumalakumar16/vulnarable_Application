@@ -15,7 +15,7 @@ include 'db.php';
      
 </head>
 <body>
-    <header class="bg-cyan-500  text-white">
+     <header class="bg-cyan-500  text-white">
     <nav class="mx-auto px-4 py-2  flex items-center justify-between">
         <!-- Left: Logo -->
         <a href="index.php" class="text-2xl ml-10 font-bold text-black whitespace-nowrap">Practical Infosec E-Commerce</a>
@@ -34,7 +34,7 @@ include 'db.php';
                 <?php if (isset($_COOKIE['is_admin']) && $_COOKIE['is_admin'] === 'true'): ?>
                     <li><a href="admin.php" class="block px-3 py-2 text-lg rounded font-bold text-black hover:bg-gray-800 hover:text-white">Admin</a></li>
                 <?php endif; ?>
-                <li><a href="logout.php" class="block px-3 py-2 text-lg rounded font-bold text-black hover:bg-gray-800 hover:text-white">Logout</a></li>
+                <li><a href="logout.php" class="block px-3 py-2 text-lg rounded font-bold  bg-red-600 text-white ">Logout</a></li>
             <?php else: ?>
                 <li><a href="login.php" class="block px-3 py-2 text-lg rounded font-bold text-black hover:bg-gray-800 hover:text-white">Login</a></li>
                 <li><a href="register.php" class="block px-3 py-2 text-lg rounded font-bold text-black hover:bg-gray-800 hover:text-white">Register</a></li>
@@ -106,14 +106,14 @@ include 'db.php';
                                 <input type="hidden" name="price" value="' . $row['price'] . '">
                                 <label for="quantity" class="block mb-1 font-semibold">Quantity:</label>
                                 <input type="number" name="quantity" value="1" min="1" class="w-full px-3 py-2 border rounded-md mb-3">
-                                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md">Buy Now</button>
+                                <button type="submit" class="bg-blue-600 text-white font-semibold  px-5 py-2 rounded-md">Buy Now</button>
                             </form>
 
                             <form method="post" action="shopping.php" class="mb-4">
                                 <label for="feedback_' . htmlspecialchars($row['id']) . '" class="block mb-2 font-semibold">Feedback:</label>
                                 <textarea id="feedback_' . htmlspecialchars($row['id']) . '" name="feedback_' . htmlspecialchars($row['id']) . '" rows="3"
                                     class="w-full px-3 py-2 border rounded-md mb-2"></textarea>
-                                <button type="submit" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md">Submit Feedback</button>
+                                <button type="submit" class="bg-blue-600 text-white font-semibold  px-5 py-2 rounded-md">Submit Feedback</button>
                                 <input type="hidden" name="product_id" value="' . htmlspecialchars($row['id']) . '">
                             </form>
 
@@ -145,14 +145,14 @@ include 'db.php';
                                 <input type="hidden" name="price" value="' . $row['price'] . '">
                                 <label for="quantity" class="block mb-1 font-semibold">Quantity:</label>
                                 <input type="number" name="quantity" value="1" min="1" class="w-full px-3 py-2 border rounded-md mb-3">
-                                <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-md">Buy Now</button>
+                                <button type="submit" class="bg-blue-600 text-white font-semibold  px-5 py-2 rounded-md">Buy Now</button>
                             </form>
 
                             <form method="post" action="shopping.php" class="mb-4">
                                 <label for="feedback_' . htmlspecialchars($row['id']) . '" class="block mb-2 font-semibold">Feedback:</label>
                                 <textarea id="feedback_' . htmlspecialchars($row['id']) . '" name="feedback_' . htmlspecialchars($row['id']) . '" rows="3"
                                     class="w-full px-3 py-2 border rounded-md mb-2"></textarea>
-                                <button type="submit" class="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-md">Submit Feedback</button>
+                                <button type="submit" class="bg-blue-600 text-white font-semibold  px-5 py-2 rounded-md">Submit Feedback</button>
                                 <input type="hidden" name="product_id" value="' . htmlspecialchars($row['id']) . '">
                             </form>
 

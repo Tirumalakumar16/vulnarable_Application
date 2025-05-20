@@ -65,56 +65,63 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Forgot Password</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <div class="container mt-5">
-        <h2>Forgot Password</h2>
+   
+
+    <div class="container mx-auto mt-10 px-4">
+    <div class="max-w-6xl mx-auto bg-white shadow-md rounded-lg p-8">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Forgot Password</h2>
 
         <?php if ($message): ?>
-            <div class="alert alert-info"><?php echo $message; ?></div>
+            <div class="bg-blue-100 text-blue-800 px-4 py-3 rounded mb-4 border border-blue-300">
+                <?php echo $message; ?>
+            </div>
         <?php endif; ?>
 
         <?php if ($step == 1): ?>
-            <form method="post">
+            <form method="post" class="space-y-4">
                 <div class="form-group">
-                    <label for="username">Enter your username:</label>
-                    <input type="text" class="form-control" id="username" name="username" required>
+                    <label for="username" class="block text-gray-700 font-semibold mb-1">Enter your username:</label>
+                    <input type="text" class="form-control w-full max-w-6xl px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="username" name="username" required>
                 </div>
-                <button type="submit" class="btn btn-primary">Next</button>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition">Next</button>
             </form>
-            </br>
-            <a href='login.php'>Go back to Login page</a>
+            <br>
+            <a href='login.php' class="text-blue-600 hover:underline">Go back to Login page</a>
+
         <?php elseif ($step == 2): ?>
-            <form method="post">
+            <form method="post" class="space-y-4">
                 <div class="form-group">
-                    <label for="security_question">Security Question:</label>
-                    <input type="text" class="form-control" id="security_question" value="<?php echo htmlspecialchars($security_question); ?>" disabled>
+                    <label for="security_question" class="block text-gray-700 font-semibold mb-1">Security Question:</label>
+                    <input type="text" class="form-control w-full max-w-6xl px-4 py-2 border border-gray-300 rounded bg-gray-100" id="security_question" value="<?php echo htmlspecialchars($security_question); ?>" disabled>
                 </div>
                 <div class="form-group">
-                    <label for="security_answer">Your Answer:</label>
-                    <input type="text" class="form-control" id="security_answer" name="security_answer" required>
+                    <label for="security_answer" class="block text-gray-700 font-semibold mb-1">Your Answer:</label>
+                    <input type="text" class="form-control w-full max-w-6xl px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="security_answer" name="security_answer" required>
                 </div>
                 <input type="hidden" name="stored_username" value="<?php echo htmlspecialchars($stored_username); ?>">
                 <input type="hidden" name="security_question" value="<?php echo htmlspecialchars($security_question); ?>">
-                <button type="submit" class="btn btn-primary">Submit Answer</button>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition">Submit Answer</button>
             </form>
-            </br>
-            <a href='login.php'>Go back to Login page</a>
+            <br>
+            <a href='login.php' class="text-blue-600 hover:underline">Go back to Login page</a>
+
         <?php elseif ($step == 3): ?>
-            <form method="post">
+            <form method="post" class="space-y-4">
                 <div class="form-group">
-                    <label for="new_password">Enter your new password:</label>
-                    <input type="password" class="form-control" id="new_password" name="new_password" required>
+                    <label for="new_password" class="block text-gray-700 font-semibold mb-1">Enter your new password:</label>
+                    <input type="password" class="form-control w-full max-w-6xl px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" id="new_password" name="new_password" required>
                 </div>
                 <input type="hidden" name="stored_username" value="<?php echo htmlspecialchars($stored_username); ?>">
-                <button type="submit" class="btn btn-primary">Reset Password</button>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded font-semibold transition">Reset Password</button>
             </form>
         <?php endif; ?>
     </div>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
