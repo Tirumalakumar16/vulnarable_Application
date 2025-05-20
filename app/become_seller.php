@@ -89,35 +89,35 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
     <form method="post" action="become_seller.php" class="space-y-6 bg-white p-6 rounded-xl shadow-md">
         
         <div>
-            <label for="full_name" class="block text-lg font-medium mb-2">Full Name:</label>
+            <label for="full_name" class="block text-xl font-semibold mb-2">Full Name:</label>
             <input type="text" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" name="full_name" id="full_name" required>
         </div>
         
         <div>
-            <label for="address" class="block text-lg font-medium mb-2">Address:</label>
+            <label for="address" class="block text-xl font-semibold mb-2">Address:</label>
             <input type="text" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" name="address" id="address" required>
         </div>
         
         <div>
-            <label for="gst_number" class="block text-lg font-medium mb-2">GST Number:</label>
+            <label for="gst_number" class="block text-xl font-semibold mb-2">GST Number:</label>
             <input type="text" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" name="gst_number" id="gst_number" required>
         </div>
         
         <div>
-            <label for="product_catalog" class="block text-lg font-medium mb-2">Product Catalog (XML):</label>
+            <label for="product_catalog" class="block text-xl font-semibold mb-2">Product Catalog (XML):</label>
             <textarea class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" name="product_catalog" id="product_catalog" rows="3" required></textarea>
             <button type="button" class="mt-2 bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800" onclick="parseXML()">Parse XML</button>
             <div id="xmlOutput" class="mt-3 text-sm text-gray-700"></div>
         </div>
         
         <div>
-            <label for="domain" class="block text-lg font-medium mb-2">Website Domain (If already selling online):</label>
+            <label for="domain" class="block text-xl font-semibold mb-2">Website Domain (If already selling online):</label>
             <input type="text" class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" name="domain" id="domain" required>
             <button type="button" class="mt-2 bg-gray-700 text-white px-4 py-2 rounded hover:bg-gray-800" onclick="pingDomain()">Ping Domain</button>
             <div id="pingOutput" class="mt-3 text-sm text-gray-700"></div>
         </div>
 
-        <button type="submit" name="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-200">Submit</button>
+        <button type="submit" name="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg mt-6 font-bold text-xl hover:bg-blue-700 transition duration-200">Submit</button>
     </form>
 </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

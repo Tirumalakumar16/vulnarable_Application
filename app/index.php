@@ -93,7 +93,7 @@
           <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
           <ul class="space-y-2 text-sm text-gray-400">
             <li>
-              <a href="index.php" class="hover:text-white hover:font-semibold"
+              <a href="https://practicalinfosec.com/Home" class="hover:text-white hover:font-semibold"
                 >Home</a
               >
             </li>
@@ -105,13 +105,13 @@
               >
             </li>
             <li>
-              <a href="blog.html" class="hover:text-white hover:font-semibold"
+              <a href="https://practicalinfosec.com/blog" class="hover:text-white hover:font-semibold"
                 >Blog</a
               >
             </li>
             <li>
               <a
-                href="aboutUs.html"
+                href="https://practicalinfosec.com/aboutUs"
                 class="hover:text-white hover:font-semibold"
                 >About Us</a
               >

@@ -61,27 +61,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <h1 class="text-3xl font-bold text-center mb-8 text-blue-600">Register</h1>
             <form method="post" action="register.php">
                 <div class="mb-5">
-                    <label for="username" class="block mb-2 font-semibold">Username:</label>
+                    <label for="username" class="block mb-2 text-xl font-semibold">Username:</label>
                     <input type="text" name="username" id="username" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div class="mb-5">
-                    <label for="email" class="block mb-2 font-semibold">Email:</label>
+                    <label for="email" class="block mb-2 text-xl  font-semibold">Email:</label>
                     <input type="email" name="email" id="email" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div class="mb-5">
-                    <label for="mobile" class="block mb-2 font-semibold">Mobile:</label>
+                    <label for="mobile" class="block mb-2 text-xl font-semibold">Mobile:</label>
                     <input type="text" name="mobile" id="mobile" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div class="mb-5">
-                    <label for="password" class="block mb-2 font-semibold">Password:</label>
+                    <label for="password" class="block mb-2 text-xl font-semibold">Password:</label>
                     <input type="password" name="password" id="password" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>
                 <div class="mb-5">
-                    <label for="security_question" class="block mb-2 font-semibold">Security Question:</label>
+                    <label for="security_question" class="block mb-2 text-xl font-semibold">Security Question:</label>
                     <select name="security_question" id="security_question" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
                         <option value="1">What is your favorite color?</option>
@@ -93,7 +93,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </select>
                 </div>
                 <div class="mb-6">
-                    <label for="security_answer" class="block mb-2 font-semibold">Security Answer:</label>
+                    <label for="security_answer" class="block mb-2 text-xl font-semibold">Security Answer:</label>
                     <input type="text" name="security_answer" id="security_answer" required
                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
                 </div>

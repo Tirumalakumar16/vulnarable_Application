@@ -9,10 +9,10 @@ include 'db.php';
 
 // Check if the user is an admin
 if (isset($_COOKIE['is_admin']) && $_COOKIE['is_admin'] === 'true') {
-    echo "<h1>Welcome to the Admin Panel!</h1>";
+    echo "<script>alert('Welcome to the Admin Panel!');</script>";
     // Admin functionalities go here...
 } else {
-    echo "<h1>Access Denied. You are not an admin.</h1>";
+    echo "<script>alert('Access Denied. You are not an admin.')</script>";
 }
 
 ?>
@@ -28,7 +28,7 @@ if (isset($_COOKIE['is_admin']) && $_COOKIE['is_admin'] === 'true') {
     <?php include 'header.php'; ?>
    
     <main class="flex justify-center mt-10 px-4 ">
-    <div class="bg-gray-100 p-8 rounded-2xl shadow-lg m-4 w-full max-w-7xl text-center">
+    <div class=" p-8 bg-white rounded-2xl shadow-lg border border-gray-200 m-4 w-full max-w-7xl text-center">
         <h1 class="text-4xl font-bold text-blue-600 mb-6">Admin Dashboard</h1>
         <p class="text-lg mb-4">
             Welcome, <strong class="text-black"><?php echo $_SESSION['username']; ?></strong>! 

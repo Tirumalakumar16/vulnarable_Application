@@ -193,12 +193,12 @@ if (isset($_COOKIE['user_prefs'])) {
     <form method="post" action="profile.php" class="mb-6 space-y-4">
         <input type="hidden" name="user_id" value="<?php echo htmlspecialchars($user['id']); ?>">
         <div>
-            <label for="new_password" class="block text-sm font-medium text-gray-700 mb-1">New Password:</label>
+            <label for="new_password" class="block text-md font-medium text-gray-700 mb-1">New Password:</label>
             <input type="password" id="new_password" name="new_password" required
                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
         <button type="submit" name="change_password"
-                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+                class="bg-blue-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-4 rounded-lg transition duration-200">
             Change Password
         </button>
     </form>
@@ -206,12 +206,12 @@ if (isset($_COOKIE['user_prefs'])) {
     <h2 class="text-xl font-semibold text-gray-700 mt-10 mb-4">Update Profile Picture</h2>
     <form method="post" enctype="multipart/form-data" action="profile.php" class="mb-6 space-y-4">
         <div>
-            <label for="profile_image" class="block text-sm font-medium text-gray-700 mb-1">Upload Photo:</label>
+            <label for="profile_image" class="block text-md font-medium text-gray-700 mb-1">Upload Photo:</label>
             <input type="file" name="profile_image" id="profile_image"
                    class="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
         <button type="submit"
-                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+                class="bg-blue-600 hover:bg-blue-700 text-white mt-4 font-semibold py-2 px-4 rounded-lg transition duration-200">
             Upload
         </button>
     </form>
@@ -219,12 +219,12 @@ if (isset($_COOKIE['user_prefs'])) {
     <h2 class="text-xl font-semibold text-gray-700 mt-10 mb-4">Fetch Image from URL</h2>
     <form method="post" action="profile.php" class="space-y-4">
         <div>
-            <label for="image_url" class="block text-sm font-medium text-gray-700 mb-1">Remote Image URL:</label>
+            <label for="image_url" class="block text-md font-medium text-gray-700 mb-1">Remote Image URL:</label>
             <input type="text" id="image_url" name="image_url" required
                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
         </div>
         <button type="submit" name="fetch_image"
-                class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
+                class="bg-blue-600 hover:bg-blue-700 mt-4 text-white font-semibold py-2 px-4 rounded-lg transition duration-200">
             Fetch Image
         </button>
     </form>
