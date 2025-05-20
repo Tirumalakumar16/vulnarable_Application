@@ -1,5 +1,5 @@
 <?php
-session_start();
+ session_start();
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ session_start();
    
 </head>
 
-<body class="bg-gray-300">
+<body class="bg-gray-100">
     <header class="bg-cyan-500 text-white">
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between flex-wrap">
         <a href="index.php" class="text-2xl pl-0 font-bold text-black ml-0">Practical Infosec E-Commerce</a>

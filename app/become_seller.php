@@ -133,7 +133,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
             <div id="pingOutput" class="mt-3 text-sm text-gray-700"></div>
         </div>
 
-        <button type="submit" name="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg text-lg hover:bg-blue-700 transition duration-200">Submit</button>
+        <button type="submit" name="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold text-lg hover:bg-blue-700 transition duration-200">Submit</button>
     </form>
 </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -30,8 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="container mt-5">
-        <a href="shopping.php" class="btn btn-secondary">Back to Shopping</a>
+    <div class="container mt-5 ">
+        <a href="shopping.php" class="btn btn-secondary bg-primary text-white fw-bold">Back to Shopping</a>
     </div>
 </body>
 </html>
