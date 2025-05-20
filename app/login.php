@@ -139,7 +139,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <!-- CAPTCHA -->
         <div>
             <label for="captcha" class="block text-md font-medium text-gray-700 mb-1">
-                Enter the CAPTCHA: <?php echo $_SESSION['captcha']; ?>
+                Enter the <strong>CAPTCHA : </strong>  <?php echo $_SESSION['captcha']; ?>
             </label>
             <input type="text" id="captcha" name="captcha" required
                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
