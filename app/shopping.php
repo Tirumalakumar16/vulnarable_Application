@@ -112,7 +112,7 @@ include 'db.php';
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="view_image.php?image=' . urlencode($row['image']) . '" alt="' . htmlspecialchars($row['name']) . '" class="w-full h-48 object-cover">
+                        <img src="view_image.php?image=' . urlencode($row['image']) . '" alt="' . htmlspecialchars($row['name']) . '" class="w-65 h-65 object-cover">
                         <div class="p-6">
                             <h5 class="text-xl font-bold text-gray-800 mb-2">' . htmlspecialchars($row['name']) . '</h5>
                             <p class="text-gray-600 mb-4">Price: $' . htmlspecialchars($row['price']) . '</p>
@@ -150,7 +150,7 @@ include 'db.php';
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="view_image.php?image=' . urlencode($row['image']) . '" alt="' . htmlspecialchars($row['name']) . '" class="w-full h-48 object-cover">
+                        <img src="view_image.php?image=' . urlencode($row['image']) . '" alt="' . htmlspecialchars($row['name']) . '" class="w-65 h-65 object-cover">
                         <div class="p-6">
                             <h5 class="text-xl font-bold text-gray-800 mb-2">' . htmlspecialchars($row['name']) . '</h5>
                             <p class="text-gray-600 mb-4">Price: $' . htmlspecialchars($row['price']) . '</p>
